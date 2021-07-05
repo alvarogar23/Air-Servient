@@ -1,0 +1,10 @@
+html    
+    head 
+        title= AparatoAire          
+    body 
+        form(action="/modo", method="GET")
+            label(for="modoAutomatico") Elige el modo 
+            select(id="modoAutomatico" name="modoAutomatico")
+                option(value="true") Automatico 
+                option(value="false") Manual   
+            input(type="submit" value="Submit")
