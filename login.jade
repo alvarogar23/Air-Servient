@@ -1,0 +1,19 @@
+body 
+    div(class="App-Header")
+        h1 Login 
+    div(class="App-Body")
+        span
+            button(id="login-button" onclick="login()")
+    
+
+    script.
+        function login(){
+            const domain = "air-servient.eu.auth0.com";
+            const audience = "https://www.air-servient.com";
+            const scope = "read:temperature";
+            const clientId = "aem4VmsNm0x9TyobH3Qr6FUWAdduMtkJ";
+            const responseType = "code";
+            const redirectUri = "http://localhost:3000/";
+
+            const response = fetch
+        }
